@@ -1,0 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/dana');
+@tailwind utilities;
+
+* {
+    min-width: 0;
+    min-height: 0;
+}
+
+.reveal {
+    background-color: #FAFAFA;
+    background-image: url("assets/fc-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    --r-main-font: 'dana', sans-serif;
+}
