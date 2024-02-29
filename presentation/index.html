@@ -32,6 +32,10 @@
 
     <!--  Tailwind Output  -->
     <link rel="stylesheet" href="tw.min.css" />
+
+    <!--  Force vite to bundle these  -->
+    <link rel="preload" href="assets/fc-bg-dark.jpg" as="image" />
+    <link rel="preload" href="assets/tldraw-make-it-real.mp4" as="video" />
   </head>
 
   <body id="app">
@@ -40,9 +44,13 @@
       <div class="slides">
         <section data-auto-animate>
           <section data-auto-animate>
-            <div class="flex items-center w-fit mx-auto gap-4">
-              <div data-id="node" class="-mt-1 h-12 w-12 bg-orange-500"></div>
-              <h2 class="m-0">FrontChapter 2024 Event</h2>
+            <div class="w-fit mx-auto">
+              <div class="flex items-baseline gap-4 mb-4">
+                <div data-id="node" class="-mt-1 h-12 w-12 bg-orange-500"></div>
+                <h2 class="m-0 font-black">FrontChapter 2024 Event</h2>
+              </div>
+              <h3 class="mb-16">Dev Stacks</h3>
+              <h4 class="text-green-600 text-[40px]">@Mahmoud_Sahebi</h4>
             </div>
           </section>
           <aside class="notes">This is notes</aside>
@@ -65,12 +73,12 @@
           <div class="relative w-full">
             <p
               data-id="label"
-              class="mb-2 fragment m-0 text-[32px] ml-0 text-left text-[#4ea358]"
+              class="font-bold mb-2 fragment m-0 text-[32px] ml-0 text-left text-green-600"
             >
               iPhone (jun 2007)
             </p>
             <div data-id="node" class="h-2 w-full bg-orange-500"></div>
-            <ul class="text-[28px] mt-6 fragment">
+            <ul class="text-[28px] mt-6 fragment space-y-3">
               <li>A new era of mobile user experience</li>
               <li>Safari on iPhone</li>
             </ul>
@@ -80,12 +88,12 @@
           <div class="relative w-full">
             <p
               data-id="label"
-              class="mb-2 m-0 text-[32px] ml-[10%] text-left text-[#4ea358]"
+              class="font-bold mb-2 m-0 text-[32px] ml-[10%] text-left text-green-600"
             >
               HTML5 (jan 2008)
             </p>
             <div data-id="node" class="h-2 w-full bg-orange-500"></div>
-            <ul class="text-[28px] mt-6">
+            <ul class="text-[28px] mt-6 space-y-3">
               <li class="fade-right fragment">Standardized Syntax</li>
               <li class="fade-right fragment">
                 Semantic Elements (
@@ -107,12 +115,12 @@
           <div class="relative w-full">
             <p
               data-id="label"
-              class="mb-2 m-0 text-[32px] ml-[20%] text-left text-[#4ea358]"
+              class="font-bold mb-2 m-0 text-[32px] ml-[20%] text-left text-green-600"
             >
               Chrome (dec 2008)
             </p>
             <div data-id="node" class="h-2 w-full bg-orange-500"></div>
-            <ul class="text-[28px] mt-6">
+            <ul class="text-[28px] mt-6 space-y-3">
               <li>Regular Updates and Innovations</li>
               <li>V8 JavaScript Engine (separated from browser)</li>
             </ul>
@@ -122,12 +130,12 @@
           <div class="relative w-full">
             <p
               data-id="label"
-              class="mb-2 m-0 text-[32px] ml-[30%] text-left text-[#4ea358]"
+              class="font-bold mb-2 m-0 text-[32px] ml-[30%] text-left text-green-600"
             >
               Node.js (may 2009)
             </p>
             <div data-id="node" class="h-2 w-full bg-orange-500"></div>
-            <ul class="text-[28px] mt-6">
+            <ul class="text-[28px] mt-6 space-y-3">
               <li>JS in non-browser environments</li>
               <li>CommonJS Modules</li>
               <li>Node Package Manager (NPM)</li>
@@ -138,12 +146,12 @@
           <div class="relative w-full">
             <p
               data-id="label"
-              class="mb-2 m-0 text-[32px] ml-[40%] text-left text-[#4ea358]"
+              class="font-bold mb-2 m-0 text-[32px] ml-[40%] text-left text-green-600"
             >
               AngularJS (oct 2010)
             </p>
             <div data-id="node" class="h-2 w-full bg-orange-500"></div>
-            <ul class="text-[28px] mt-6">
+            <ul class="text-[28px] mt-6 space-y-3">
               <li>Scalable Web Applications</li>
             </ul>
           </div>
@@ -152,12 +160,12 @@
           <div class="relative w-full">
             <p
               data-id="label"
-              class="mb-2 m-0 text-[32px] ml-[50%] text-left text-[#4ea358]"
+              class="font-bold mb-2 m-0 text-[32px] ml-[50%] text-left text-green-600"
             >
               React.js (may 2013)
             </p>
             <div data-id="node" class="h-2 w-full bg-orange-500"></div>
-            <ul class="text-[28px] mt-6">
+            <ul class="text-[28px] mt-6 space-y-3">
               <li>Easy to Learn</li>
               <li>Introducing JSX</li>
               <li>Backward Compatible (almost)</li>
@@ -168,12 +176,12 @@
           <div class="relative w-full">
             <p
               data-id="label"
-              class="mb-2 m-0 text-[32px] ml-[66%] text-left text-[#4ea358]"
+              class="font-bold mb-2 m-0 text-[32px] ml-[66%] text-left text-green-600"
             >
               ES6 (jun 2015)
             </p>
             <div data-id="node" class="h-2 w-full bg-orange-500"></div>
-            <ul class="text-[28px] mt-6">
+            <ul class="text-[28px] mt-6 space-y-3">
               <li>Yearly ECMAScript Updates</li>
               <li>ECMAScript Modules (ESM)</li>
             </ul>
@@ -184,12 +192,12 @@
           <div class="relative w-full">
             <p
               data-id="label"
-              class="mb-2 m-0 text-[30px] ml-[60%] text-left text-[#4ea358]"
+              class="font-bold mb-2 m-0 text-[30px] ml-[60%] text-left text-green-600"
             >
               WebAssembly (mar 2017)
             </p>
             <div data-id="node" class="h-2 w-full bg-orange-500"></div>
-            <ul class="text-[28px] mt-6">
+            <ul class="text-[28px] mt-6 space-y-3">
               <li>Near-Native Performance</li>
               <li>Programming Language Flexibility</li>
             </ul>
@@ -202,7 +210,7 @@
               <h4 class="m-0">What we have right now?</h4>
               <div data-id="node" class="h-2 w-full bg-orange-500"></div>
             </div>
-            <ul class="text-[28px] flex flex-col gap-2 w-fit mx-auto">
+            <ul class="text-[28px] flex flex-col gap-3 w-fit mx-auto">
               <li class="fade-right fragment">
                 Constant Browsers Update on All Platforms
               </li>
@@ -217,7 +225,7 @@
                 Big companies are backing open-source projects
               </li>
               <li class="fade-right fragment">TypeScript Adoption</li>
-              <li class="fade-right fragment text-[#4ea358]">
+              <li class="fade-right fragment text-green-600">
                 Mature Frameworks and Tools
               </li>
             </ul>
@@ -227,7 +235,7 @@
         <section data-auto-animate>
           <div class="flex items-center w-fit mx-auto gap-4">
             <div data-id="node" class="-mt-1 h-12 w-12 bg-orange-500"></div>
-            <h2 class="m-0">Modern Web Dev Stacks</h2>
+            <h2 class="m-0 font-black">Modern Web Dev Stacks</h2>
           </div>
         </section>
 
@@ -237,7 +245,7 @@
               <h4 class="m-0">Buildless Stack</h4>
               <div data-id="node" class="h-2 w-full bg-orange-500"></div>
             </div>
-            <ul class="text-[28px] flex flex-col gap-2 w-fit mx-auto">
+            <ul class="text-[28px] flex flex-col gap-3 w-fit mx-auto">
               <li class="fade-right fragment">Easy to learn</li>
               <li class="fade-right fragment">Easy to implement</li>
               <li class="fade-right fragment">Easy and low-cost to deploy</li>
@@ -245,7 +253,7 @@
               <li class="fade-right fragment">
                 Hard to utilize advanced web dev tools
               </li>
-              <li class="fade-right fragment text-[28px] text-[#4ea358]">
+              <li class="fade-right fragment text-[28px] text-green-600">
                 Possible use cases: Single-Page Landings, Presentation
               </li>
             </ul>
@@ -258,14 +266,14 @@
               <h4 class="m-0">Wordpress (or other site builders)</h4>
               <div data-id="node" class="h-2 w-full bg-orange-500"></div>
             </div>
-            <ul class="text-[28px] flex flex-col gap-2 w-fit mx-auto">
+            <ul class="text-[28px] flex flex-col gap-3 w-fit mx-auto">
               <li class="fade-right fragment">Full solution with backend</li>
               <li class="fade-right fragment">No coding / Low coding</li>
               <li class="fade-right fragment">Easy and low-cost to deploy</li>
               <li class="fade-right fragment">Easy to maintain</li>
               <li class="fade-right fragment">Huge community and ecosystem</li>
               <li class="fade-right fragment">Limited extensibility</li>
-              <li class="fade-right fragment text-[28px] text-[#4ea358]">
+              <li class="fade-right fragment text-[28px] text-green-600">
                 Possible use cases: Blog, Simple Ecommerce, Portfolio
               </li>
             </ul>
@@ -278,7 +286,7 @@
               <h4 class="m-0">Vite (or other bundlers)</h4>
               <div data-id="node" class="h-2 w-full bg-orange-500"></div>
             </div>
-            <ul class="text-[28px] flex flex-col gap-2 w-fit mx-auto">
+            <ul class="text-[28px] flex flex-col gap-3 w-fit mx-auto">
               <li class="fade-right fragment">
                 Very flexible and lightning-fast DX
               </li>
@@ -294,7 +302,7 @@
               <li class="fade-right fragment">
                 Exported files are statically hosted so there is no server-side
               </li>
-              <li class="fade-right fragment text-[28px] text-[#4ea358]">
+              <li class="fade-right fragment text-[28px] text-green-600">
                 Possible use cases: Admin Panels, SaaS
               </li>
             </ul>
@@ -311,7 +319,7 @@
               <h4 class="m-0">Next.js (or other meta-frameworks)</h4>
               <div data-id="node" class="h-2 w-full bg-orange-500"></div>
             </div>
-            <ul class="text-[28px] flex flex-col gap-2 w-fit mx-auto">
+            <ul class="text-[28px] flex flex-col gap-3 w-fit mx-auto">
               <li class="fade-right fragment">
                 Strong patterns and architecture
               </li>
@@ -333,7 +341,7 @@
                 size projects)
               </li>
               <li class="fade-right fragment">Server components</li>
-              <li class="fade-right fragment text-[28px] text-[#4ea358]">
+              <li class="fade-right fragment text-[28px] text-green-600">
                 Possible use cases: Advanced Ecommerce, News, Financial Services
               </li>
             </ul>
@@ -351,33 +359,23 @@
               <h4 class="m-0">AHA (Astro / HTMX / Alpine.js)</h4>
               <div data-id="node" class="h-2 w-full bg-orange-500"></div>
             </div>
-            <ul class="text-[28px] flex flex-col gap-2 w-fit mx-auto">
-              <li class="fade-right fragment">Simple yet extensible</li>
-              <li class="fade-right fragment">Highly configurable</li>
+            <ul class="text-[28px] flex flex-col gap-3 w-fit mx-auto">
+              <li class="fade-right fragment">Simple and low JS usage</li>
+              <li class="fade-right fragment">Declarative approach</li>
+              <li class="fade-right fragment">Small bundle size</li>
               <li class="fade-right fragment">
-                Many optimizations are applied under the hood
+                Client states are handled by Alpine with its limitations
               </li>
               <li class="fade-right fragment">
-                Can be deployed statically, on server or on edge (serverless)
+                JavaScript codes to produce HTML are offloaded to server-side
               </li>
-              <li class="fade-right fragment">
-                Extensive community and rich ecosystem
-              </li>
-              <li class="fade-right fragment">
-                SEO-friendly because of SSR/ISR
-              </li>
-              <li class="fade-right fragment">
-                Backend can be developed alongside frontend (small to medium
-                size projects)
-              </li>
-              <li class="fade-right fragment">Server components</li>
-              <li class="fade-right fragment text-[28px] text-[#4ea358]">
-                Possible use cases: Advanced Ecommerce, News, Financial Services
+              <li class="fade-right fragment text-[28px] text-green-600">
+                Possible use cases: Content-heavy websites, CRUD apps
               </li>
             </ul>
           </div>
           <aside class="notes">
-            صحبت در مورد rsc
+            استک جدید
             <br />
             بکند با هونو توسعه پیدا کنه بعد انتقال پیدا کنه
           </aside>
@@ -404,6 +402,62 @@
           </div>
           <aside class="notes">
             صحبت در مورد اینکه هوش مصنوعی نیاز رو بیشتر می کنه
+          </aside>
+        </section>
+
+        <section
+          data-auto-animate
+          data-background="assets/fc-bg-dark.jpg"
+          data-background-color="#27272A"
+          data-background-transition="zoom"
+          data-background-size="contain"
+        >
+          <div class="relative w-full">
+            <div class="w-fit mx-auto mb-6">
+              <h4 class="m-0 text-white">Artificial Intelligence ✨</h4>
+              <div data-id="node" class="h-2 w-full bg-orange-500"></div>
+            </div>
+            <ol class="text-[28px] flex flex-col gap-3 w-fit mx-auto">
+              <li class="fade-right fragment">
+                Developers are main part for translating conversations into
+                code.
+              </li>
+              <li class="fade-right fragment">
+                AI increases dev productivity, building product will be more
+                viable and demand will increase.
+              </li>
+              <li class="fade-right fragment">
+                Profit-centric companies (software sellers) hire more,
+                cost-centric companies (softwares for internal solution) layoff.
+              </li>
+              <li class="fade-right fragment text-green-600">
+                We are all in this together
+              </li>
+            </ol>
+          </div>
+          <aside class="notes">
+            <ol>
+              <li>
+                وکیل‌ها پول زیادی می‌گیرن که قراردادها رو به زبان طبیعی بنویسن،
+                چون نوشتن قرارداد و متن حقوقی با زبان طبیعی بسیار سخته. هرچقدر
+                هم با ai محصول بسازی همچنان کد نویس نمی شه چقدر سخنه که با زبان
+                انسانی مثلا بخوای دنباله فیبونانچی رو به هوش مصنوعی توضیح بدی
+                اگه ندونه دنباله فیبو چیه
+              </li>
+              <li>
+                هوش مصنوعی قدرت و سرعت برنامه نویس رو بیشتر می کنه
+                <br />
+                ساخت محصول سریع تر و هزینه پایین‌تر میاد
+                <br />
+                محصولات بیشتر ساخته می‌شه و در نتیجه نیاز بیشتر می‌شه مثل وردپرس
+              </li>
+
+              <li>
+                پروفیت سنتریک ها مثل sass ها
+                <br />
+                اتوماسیون داخلی ها کاست سنتریک
+              </li>
+            </ol>
           </aside>
         </section>
 
@@ -463,406 +517,6 @@
 					</script></code></pre>
         </section>
 
-        <section
-          data-auto-animate
-          data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
-        >
-          <h2>Auto-Animate</h2>
-          <p>
-            Automatically animate matching elements across slides with
-            <a href="https://revealjs.com/auto-animate/">Auto-Animate</a>.
-          </p>
-          <div class="r-hstack justify-center">
-            <div
-              data-id="box1"
-              style="
-                background: #999;
-                width: 50px;
-                height: 50px;
-                margin: 10px;
-                border-radius: 5px;
-              "
-            ></div>
-            <div
-              data-id="box2"
-              style="
-                background: #999;
-                width: 50px;
-                height: 50px;
-                margin: 10px;
-                border-radius: 5px;
-              "
-            ></div>
-            <div
-              data-id="box3"
-              style="
-                background: #999;
-                width: 50px;
-                height: 50px;
-                margin: 10px;
-                border-radius: 5px;
-              "
-            ></div>
-          </div>
-        </section>
-        <section
-          data-auto-animate
-          data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
-        >
-          <div class="r-hstack justify-center">
-            <div
-              data-id="box1"
-              data-auto-animate-delay="0"
-              style="
-                background: cyan;
-                width: 150px;
-                height: 100px;
-                margin: 10px;
-              "
-            ></div>
-            <div
-              data-id="box2"
-              data-auto-animate-delay="0.1"
-              style="
-                background: magenta;
-                width: 150px;
-                height: 100px;
-                margin: 10px;
-              "
-            ></div>
-            <div
-              data-id="box3"
-              data-auto-animate-delay="0.2"
-              style="
-                background: yellow;
-                width: 150px;
-                height: 100px;
-                margin: 10px;
-              "
-            ></div>
-          </div>
-          <h2 style="margin-top: 20px">Auto-Animate</h2>
-        </section>
-        <section
-          data-auto-animate
-          data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
-        >
-          <div class="r-stack">
-            <div
-              data-id="box1"
-              style="
-                background: cyan;
-                width: 300px;
-                height: 300px;
-                border-radius: 200px;
-              "
-            ></div>
-            <div
-              data-id="box2"
-              style="
-                background: magenta;
-                width: 200px;
-                height: 200px;
-                border-radius: 200px;
-              "
-            ></div>
-            <div
-              data-id="box3"
-              style="
-                background: yellow;
-                width: 100px;
-                height: 100px;
-                border-radius: 200px;
-              "
-            ></div>
-          </div>
-          <h2 style="margin-top: 20px">Auto-Animate</h2>
-        </section>
-
-        <section
-          data-auto-animate
-          data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
-        >
-          <h2>Touch Optimized</h2>
-          <p>
-            Presentations look great on touch devices, like mobile phones and
-            tablets. Simply swipe through your slides.
-          </p>
-          <div class="r-stack" style="position: absolute; top: 1000px">
-            <div
-              data-id="box1"
-              style="
-                background: cyan;
-                width: 300px;
-                height: 300px;
-                border-radius: 200px;
-              "
-            ></div>
-            <div
-              data-id="box2"
-              style="
-                background: magenta;
-                width: 200px;
-                height: 200px;
-                border-radius: 200px;
-              "
-            ></div>
-            <div
-              data-id="box3"
-              style="
-                background: yellow;
-                width: 100px;
-                height: 100px;
-                border-radius: 200px;
-              "
-            ></div>
-          </div>
-        </section>
-
-        <section data-markdown>
-          <script type="text/template">
-            ## Markdown Support
-
-            Write content using inline or external Markdown.
-            Instructions and more info available in the [docs](https://revealjs.com/markdown/).
-
-            ```html []
-            <section data-markdown>
-              ## Markdown Support
-
-              Write content using inline or external Markdown.
-              Instructions and more info available in the [docs](https://revealjs.com/markdown/).
-            </section>
-            ```
-          </script>
-        </section>
-
-        <section>
-          <p>Add the <code>r-fit-text</code> class to auto-size text</p>
-          <h2 class="r-fit-text">FIT TEXT</h2>
-        </section>
-
-        <section>
-          <section id="fragments">
-            <h2>Fragments</h2>
-            <p>Hit the next arrow...</p>
-            <p class="fragment">... to step through ...</p>
-            <p>
-              <span class="fragment">... a</span>
-              <span class="fragment">fragmented</span>
-              <span class="fragment">slide.</span>
-            </p>
-          </section>
-          <section>
-            <h2>Fragment Styles</h2>
-            <p>There's different types of fragments, like:</p>
-            <p class="fragment grow">grow</p>
-            <p class="fragment shrink">shrink</p>
-            <p class="fragment fade-out">fade-out</p>
-            <p>
-              <span style="display: inline-block" class="fragment fade-right"
-                >fade-right,
-              </span>
-              <span style="display: inline-block" class="fragment fade-up"
-                >up,
-              </span>
-              <span style="display: inline-block" class="fragment fade-down"
-                >down,
-              </span>
-              <span style="display: inline-block" class="fragment fade-left"
-                >left</span
-              >
-            </p>
-            <p class="fragment fade-in-then-out">fade-in-then-out</p>
-            <p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-            <p>
-              Highlight <span class="fragment highlight-red">red</span>
-              <span class="fragment highlight-blue">blue</span>
-              <span class="fragment highlight-green">green</span>
-            </p>
-          </section>
-        </section>
-
-        <section id="transitions">
-          <h2>Transition Styles</h2>
-          <p>
-            You can select from different transitions, like: <br />
-            <a href="?transition=none#/transitions">None</a> -
-            <a href="?transition=fade#/transitions">Fade</a> -
-            <a href="?transition=slide#/transitions">Slide</a> -
-            <a href="?transition=convex#/transitions">Convex</a> -
-            <a href="?transition=concave#/transitions">Concave</a> -
-            <a href="?transition=zoom#/transitions">Zoom</a>
-          </p>
-        </section>
-
-        <section>
-          <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-            <h2>... and GIFs!</h2>
-          </section>
-        </section>
-
-        <section
-          data-transition="slide"
-          data-background="#4d7e65"
-          data-background-transition="slide"
-        >
-          <h2>Background Transitions</h2>
-          <p>
-            Different background transitions are available via the
-            backgroundTransition option. This one's called "zoom".
-          </p>
-          <pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-        </section>
-
-        <section
-          data-transition="slide"
-          data-background="#b5533c"
-          data-background-transition="zoom"
-        >
-          <h2>Background Transitions</h2>
-          <p>You can override background transitions per-slide.</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-        </section>
-
-        <section>
-          <h2>Tabular Tables</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Value</th>
-                <th>Quantity</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Apples</td>
-                <td>$1</td>
-                <td>7</td>
-              </tr>
-              <tr>
-                <td>Lemonade</td>
-                <td>$2</td>
-                <td>18</td>
-              </tr>
-              <tr>
-                <td>Bread</td>
-                <td>$3</td>
-                <td>2</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        <section>
-          <h2>Clever Quotes</h2>
-          <p>
-            These guys come in two forms, inline:
-            <q
-              cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"
-              >The nice thing about standards is that there are so many to
-              choose from</q
-            >
-            and block:
-          </p>
-          <blockquote
-            cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"
-          >
-            &ldquo;For years there has been a theory that millions of monkeys
-            typing at random on millions of typewriters would reproduce the
-            entire works of Shakespeare. The Internet has proven this theory to
-            be untrue.&rdquo;
-          </blockquote>
-        </section>
-
-        <section>
-          <h2>Export to PDF</h2>
-          <p>
-            Presentations can be
-            <a href="https://revealjs.com/pdf-export/">exported to PDF</a>,
-            here's an example:
-          </p>
-          <iframe
-            data-src="https://www.slideshare.net/slideshow/embed_code/42840540"
-            width="445"
-            height="355"
-            frameborder="0"
-            marginwidth="0"
-            marginheight="0"
-            scrolling="no"
-            style="border: 3px solid #666; margin-bottom: 5px; max-width: 100%"
-            allowfullscreen
-          >
-          </iframe>
-        </section>
-
-        <section>
-          <h2>Global State</h2>
-          <p>
-            Set <code>data-state="something"</code> on a slide and
-            <code>"something"</code>
-            will be added as a class to the document element when the slide is
-            open. This lets you apply broader style changes, like switching the
-            page background.
-          </p>
-        </section>
-
-        <section data-state="customevent">
-          <h2>State Events</h2>
-          <p>
-            Additionally custom events can be triggered on a per slide basis by
-            binding to the <code>data-state</code> name.
-          </p>
-          <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.on( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-        </section>
-
-        <section>
-          <h2>Take a Moment</h2>
-          <p>
-            Press B or . on your keyboard to pause the presentation. This is
-            helpful when you're on stage and want to take distracting slides off
-            the screen.
-          </p>
-        </section>
-
-        <section>
-          <h2>Much more</h2>
-          <ul>
-            <li>Right-to-left support</li>
-            <li>
-              <a href="https://revealjs.com/api/">Extensive JavaScript API</a>
-            </li>
-            <li>
-              <a href="https://revealjs.com/auto-slide/">Auto-progression</a>
-            </li>
-            <li>
-              <a href="https://revealjs.com/backgrounds/#parallax-background"
-                >Parallax backgrounds</a
-              >
-            </li>
-            <li>
-              <a href="https://revealjs.com/keyboard/"
-                >Custom keyboard bindings</a
-              >
-            </li>
-          </ul>
-        </section>
-
-        <section style="text-align: left">
-          <h1>THE END</h1>
-          <p>
-            - <a href="https://slides.com">Try the online editor</a> <br />
-            -
-            <a href="https://github.com/hakimel/reveal.js"
-              >Source code &amp; documentation</a
-            >
-          </p>
-        </section>
         <section
           data-background-iframe="https://sahebi.org"
           data-background-interactive

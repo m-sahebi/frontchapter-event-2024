@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "run-p dev:*",
-    "dev:serve": "web-dev-server -w -p 3000",
+    "dev:serve": "vite --port 3000",
     "dev:tw": "tailwindcss -i raw.css -o ./tw.min.css --watch --minify",
-    "build": "run-p build:*",
-    "build:tw": "tailwindcss -i raw.css -o ./tw.min.css --minify"
+    "build": "run-s build:*",
+    "build:tw": "tailwindcss -i raw.css -o ./tw.min.css --minify",
+    "build:bundle": "vite build"
   },
   "dependencies": {
     "reveal.js": "^5.0.5"
@@ -18,7 +19,8 @@
     "@web/dev-server": "^0.4.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.2.5",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
   },
   "engines": {
     "node": "20.10.0"
